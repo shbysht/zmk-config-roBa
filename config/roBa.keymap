@@ -38,6 +38,11 @@
             bindings = <&kp LANGUAGE_4>;
             key-positions = <18 19>;
         };
+
+        a {
+            bindings = <&kp A>;
+            key-positions = <26 25>;
+        };
     };
 
     macros {
