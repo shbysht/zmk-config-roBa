@@ -27,19 +27,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        en {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <12 13>;
-        };
-
-        ja {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <18 19>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -78,7 +66,7 @@
         SYMBOL {
             bindings = <
 &kp EXCL        &kp AT          &kp HASH   &kp DOLLAR     &kp PERCENT                         &kp PIPE           &kp AMPS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp TILDE       &kp UNDERSCORE  &kp PLUS   &kp ASTERISK   &kp MINUS       &trans      &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp TILDE       &kp UNDERSCORE  &kp PLUS   &kp ASTERISK   &kp GRAVE       &trans      &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &kp APOSTROPHE  &kp CARET       &kp SLASH  &kp BACKSLASH  &kp EQUAL       &trans      &trans  &kp COLON          &kp SEMI          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
 &trans          &trans          &trans     &mkp MB2       &kp LANGUAGE_2  &trans      &trans  &kp LANGUAGE_1                                                                    &mkp MB2
             >;
